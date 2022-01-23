@@ -2,8 +2,9 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content=" width=device-width; initial-scale=1.0;">
 <title>Snowy Days</title>
-	<link href="images/icon.png" rel="shortcut icon" type="image/ico"/>
+	<link href="images/others/logo.png" rel="shortcut icon" type="image/ico"/>
 	
 	<!--css-->
 	<link href="css/main.css" rel="stylesheet" type="text/css">
@@ -12,21 +13,39 @@
 	<!--js-->
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/PureSnow.js"></script>
+	
+	<!--google font-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap" rel="stylesheet">
 </head>
 
-
-<main>
-	<div class="box box1">1</div>
-	<div class="box box2">2
-	   <h1>Snow Man</h1>
-	   	<p>Kyoto is the capital city of Kyoto Prefecture in Japan. Located in the Kansai region on the island of Honshu, Kyoto forms a part of the Keihanshin metropolitan area along with Osaka and Kobe.Kyoto is the capital city of Kyoto Prefecture in Japan. Located in the Kansai region on the island of Honshu, Kyoto forms a part of the Keihanshin metropolitan area along with Osaka and Kobe.</p>
-	</div>
-	<div class="box box3">3
-		<div class="nested">Enter</div>
-	</div>
-	<div class="box box4">4</div>
-</main>
+<body>
+	<div id="snow"></div>
 	
-
-
+	<main>
+		<div class="box box1"></div>
+		<div class="box box2">
+		   <h1>Snow Man</h1>
+			<p>
+				<br />
+				ああ、しょっぱいぜ！ナミダの海越えて<br />
+				無理難題な夢をまた見ような<br />
+				風に走れ　汗かいて　転げて その身を焦がせ<br />
+				失敗の数だけ増えようが<br />
+				間違いなんて誰が笑えようか？<br />
+				雨に打たれ　泥飲んで　踏まれて　花開け！<br />
+				『いつの日か』が　今日の日に<br />
+				目覚めない夢に　訪れるまで！
+				<br />
+			</p>
+		</div>
+		<div class="box box3">
+			<div class="nested"><span onclick="transitionToPage('index.html')">Enter</span></div>
+		</div>
+		<div class="box box4"></div>
+	</main>
+</body>
 </html>
+
