@@ -21,10 +21,11 @@
 	background: #fff;
 }
 
+
 body{
 	font-family: 'Cabin', meiryo, sans-serif;
 	font-size:50px;
-	color:rgba(255,255,255,1);
+	color:#fff;
 	
 	/*snow flakes*/
 	/*height: 100vh;*/
@@ -52,6 +53,9 @@ main{
     grid-auto-rows: minmax(200px, auto);
 	
 	overflow: hidden;
+	
+	font-family: 'Cabin', meiryo, sans-serif;
+	color: #fff;
 }
 
 .box1{
@@ -115,6 +119,7 @@ span:hover{
 body{
 	overflow: hidden;
 }
+	
 	
 main{
 	display: grid;

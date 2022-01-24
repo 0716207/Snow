@@ -18,7 +18,7 @@
 	font-family: 'Cabin', meiryo, sans-serif;
 }
 
-h1{
+h1{/*nav title*/
 	text-align: center;
 	font-family: typewriter, meiryo;
 	font-size: 35px;
@@ -150,7 +150,7 @@ body{
 
 .swiper {
 	overflow:hidden;
-	min-width:1200px;
+	/*min-width:1200px;*/
 	background-size:100%;
 }
 
@@ -172,21 +172,15 @@ body{
 
 .swiper-slide img {
 	display: block;
-	width: 100%;
-    height: 550px;
+	width: 33.33%;
 	object-fit: cover;
 }
 
-.swiper-slide {
-	width: 80%;
+.swiper-slide img:hover{
+	cursor: pointer;
 }
 
-.swiper-slide:nth-child(2n) {
-	width: 60%;
-}
-
-
-/*video*/
+/*profile*/
 article{
 	float:left;
 	width:100%;
@@ -195,11 +189,13 @@ article{
 	background:rgba(255,255,255,.5);
 }
 
-/*2n : 雙數*/
-/*雙數則底色變色*/
-/*偽類 Pseudo Class*/
 article:nth-child(2n){
 	background: rgba(255, 190, 10, .1);
+	color: #fff;
+}
+
+article span{
+	color:rgba(207, 181, 59, 1);
 }
 
 article .picbox, article .desbox{
@@ -220,57 +216,16 @@ article .desbox{
 
 .desbox h1{
 	/*font-family: 'Noto Serif TC', serif;*/
-	font-family: serif;
+	font-family: 'Cabin', meiryo, sans-serif;
+	color: #fff;
 	font-weight: 900;
 	font-size: 40px;
-	color: rgba(229, 94, 56, 1);
 	line-height: 2em;
-}
-
-/*報導的文字最後會有的小圖*/
-/*偽元素 Pseudo Element : 也可以加日期文字*/
-.desbox p::after{
-	content: url(../images/sq.jpg);	
 }
 
 .picbox img{
 	width: 100%;
-}
-
-.picbox:hover img{
-	-webkit-filter: brightness(30%); /*Safari*/
-	filter: brightness(30%);
-}
-
-.picbox:hover .fadebox{
-	opacity: 1;
-}
-
-.fadebox{
-	/*偵測容器中心點的位置*/
-	/*把中心從左上角移到正中間*/
-	position: absolute;
-	top: 50%;
-	left: 50%;
 	
-	-ms-transform: translate(-50%, -50%); /*IE 9*/
-	-webkit-transform: translate(-50%, -50%); /*Safari*/
-	transform: translate(-50%, -50%);
-	opacity: 0;
-}
-
-.fadebox a{
-	display: block;
-	font-size: 25px;
-	padding: 16px 32px;
-	color: rgba(255, 255, 255, 1);
-	text-decoration: none;
-	background: rgba(229, 94, 56, 1);
-}
-
-.fadebox a:hover{
-	color: rgba(229, 94, 56, 1);
-	background: rgba(255, 255, 255, 1);
 }
 
 
