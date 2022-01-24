@@ -5,190 +5,174 @@
   src: url(MeiryoWithMircosoftYahei.ttf);
 }
 
-/**********************************/
 
 *{
 	margin:0;
 	padding:0;	
-	font-family: 'Cabin', meiryo, sans-serif;
 }
 
 ::-moz-selection{ /*Firefox*/
-	color: #fff;
-	background: #014170;
+	color:#014170;
+	background: #fff;
 }
 
 ::selection{
-	color: #fff;
-	background: #014170;
+	color:#014170;
+	background: #fff;
 }
 
-/**********************************
-
-//*header*/
-header{
-	width:100%;
-	height: 100px;
-	background: rgba(255, 255, 255, 1);
-	box-sizing: border-box;
-	margin: auto; /*中心置中*/
-	
-	position: -webkit-sticky; /*Safari*/
-	position: sticky;
-	top: 0;
-	z-index: 2000;
-}
-
-.h_box{
-	width: 80%;
-	margin: auto;
-}
-
-.h_box img{
-	float: left;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	transition: .3s;
-}
-
-.h_box img:hover{
-	cursor: pointer;
-	opacity: .7;
-}
-
-
-/*nav*/
-nav{
-	float: right;
-	z-index: 10000;
-}
-
-nav ul{
-	list-style: none;
-}
-
-nav .box{
-	position:relative;
-	display: inline-block;
-	
-	font-size:15px;
-	width:100px;
-	line-height:100px;
-	color: #014170;
-	text-decoration:none;
-	text-align:center;
-	transition: .3s;
-}
-
-nav .box:hover{
-	text-decoration-line: underline;
-    text-decoration-style: solid;
-	color: rgba(207, 181, 59, 1);
-	cursor: pointer;
-}
-
-
-
-/*section*/ 
-section{ 
-	position:relative;
-	width:100vw;
-	height:120vh;
-	overflow:hidden;
-}
-
-.content{ 	
-	position:absolute;
-	width:100vw;
-	height:120vh;
-	left:0;
-	top:0;
-	display:none;
-}
-
-/*body*/
 body{
-	background: #014170;
-	position: relative;
+	font-family: 'Cabin', meiryo, sans-serif;
+	font-size:50px;
+	color:rgba(255,255,255,1);
+	
+	/*snow flakes*/
+	/*height: 100vh;*/
+    background: linear-gradient(#123, #111);
+    
 	
 	/*fade to another page*/
 	opacity: 0;
-  	transition: opacity .5s;
+   	transition: opacity 1s;
 }
 
-/*swiper*/
-:root{
-    --swiper-pagination-color: #fff;
+h1{
+	font-size:50px;	
 }
 
-.swiper-pagination-bullets {
-    width: 50px;
-    height: 50px;
-	color: #fff;
-}
-.swiper-button-next { 
-    color: #fff !important;    
+p{
+	font-size:18px;
+	line-height:1.5em;
 }
 
-.swiper-button-prev { 
-    color:  #fff !important;
+/*main*/
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(200px, auto);
+	
+	overflow: hidden;
 }
 
-.swiper {
-	overflow:hidden;
-	min-width:1200px;
-	background-size:100%;
+.box1{
+    grid-column: 1;
+    grid-row: 2/5;
+	background:url(../images/others/front2.png) bottom no-repeat;
+    background-size:cover;
 }
 
-.swiper-slide {
-	/* Center slide text vertically */
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	-webkit-justify-content: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	-webkit-align-items: center;
-	align-items: center;
+.box2{
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center; /*along the column*/
+    align-self: center; /*along the row*/
+    
+    padding:30px;
+    background:#014170;
+    color:rgba(255,255,255,1);
 }
 
-.swiper-slide img {
-	display: block;
-	width: 100%;
-    height: 550px;
-	object-fit: cover;
+.box3{
+    grid-column: 1;
+    grid-row: 6;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background:none;
 }
 
-.swiper-slide {
-	width: 80%;
+span{
+	transition: .3s;
 }
 
-.swiper-slide:nth-child(2n) {
-	width: 60%;
+span:hover{
+	cursor: pointer;
+	color: rgba(207, 181, 59, 1);
 }
 
-
-
-
-
-/*footer*/
-footer{
-	clear:both;
-	padding:20px 0px;
-	text-align:center;
-	color:#fff;
-	font-size: 14px;
+.nested{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    
+    border:solid 1px rgba(255,255,255,1);
+    padding:5px;
+    font-size:50px;
+    color:rgba(255,255,255,1);
 }
 
-
+.snowflake {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(white, white); /* Workaround for Chromium's selective color inversion */
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px white);
+}
 
 /*for tablets*/
 @media only screen and (min-width: 768px) {
+body{
+	overflow: hidden;
+}
 	
+main{
+	display: grid;
+	/*column set template : 4*/
+    grid-template-columns: repeat(4, 1fr);
+	/*row自動生成*/
+    grid-auto-rows: minmax(200px, auto);
+	grid-column-gap: 20px;
+    grid-row-gap: 20px;
+	
+	/*column撐滿畫面*/
+	/*height: 100vh;*/
+}
+
+.box1{
+	grid-column: 2/5;
+	grid-row: 1/4;
+	
+	background:url(../images/others/front1.jpg) bottom no-repeat;
+	/*撐滿畫面*/
+	background-size:cover;
+	
+	/*用z-index做順序上的調整*/
+}
+
+.box2{
+	grid-column: 1/3;
+	grid-row: 2/3;
+	justify-content: center; /*垂直置中*/
+	align-self: center; /*水平置中*/
+	
+	padding:30px;
+	background:#014170;
+	color:rgba(255,255,255,1);
+}
+
+.box3{
+	grid-column: 4/5;
+    grid-row: 3/4;
+    
+	/*自己本身也可以是容器*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background:none;
+}
+
+/*文字放box3正中間*/
+.nested{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    
+	/*框線*/
+    border:solid 1px rgba(255,255,255,1);
+    padding:5px;
+    font-size:50px;
+    color:rgba(255,255,255,1);
+}
 }
 
 /*for desktops*/

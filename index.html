@@ -8,18 +8,12 @@
 	
 	<!--css-->
 	<link href="css/index.css" rel="stylesheet" type="text/css">
-	<link href="css/rwd.css" rel="stylesheet" type="text/css">	
+	<link href="css/rwd.css" rel="stylesheet" type="text/css">
 	
 	<!--js-->
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
-	
-	<!---swiper-->
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
-	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="js/PureSnow.js"></script>
 	
 	<!--google font-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,108 +21,31 @@
 	<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap" rel="stylesheet">
 </head>
 
-<header>
-	<!--.h_box : 裝logo與下拉式表單的容器-->
-	<div class="h_box">
-        <!--logo-->
-		<div class="box"><span onclick="transitionToPage('index.html')"><img src="images/others/logo.png" height="100px" alt="LOGO"/></span></div>
-            
-        <!--nav-->
-        <nav>
-			<ul>
-				<div class="box"></div>
-				<div class="box">ABOUT</div>
-				<div class="box">すの日常</div>
-				<div class="box">ALBUM</div>
-				<div class="box">VIDEO</div>
-				<div class="box">LINK</div>
-			</ul>
-        </nav>
-	</div>
-</header>
-
-<body>	
-	<section>
-		<!--home-->
-		<div class="content">
-			<!-- Swiper -->
-			<div class="swiper mySwiper swiper-initialized swiper-horizontal swiper-pointer-events">
-			  <div class="swiper-wrapper" id="swiper-wrapper-7ba2f1421bba4446" aria-live="polite">
-				<div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 6" style="margin-right: 30px;"><img src="images/others/swiper1.jpg"></div>
-				<div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 6" style="margin-right: 30px;"><img src="images/others/swiper2.jpg"></div>
-				<div class="swiper-slide swiper-slide-next" role="group" aria-label="3 / 6" style="margin-right: 30px;"><img src="images/others/swiper3.jpeg"></div>
-				<div class="swiper-slide swiper-slide-next" role="group" aria-label="4 / 6" style="margin-right: 30px;"><img src="images/others/swiper4.jpg"></div>
-				<div class="swiper-slide swiper-slide-next" role="group" aria-label="5 / 6" style="margin-right: 30px;"><img src="images/others/swiper5.jpg"></div>
-				<div class="swiper-slide swiper-slide-next" role="group" aria-label="6 / 6" style="margin-right: 30px;"><img src="images/others/swiper6.jpg"></div>
-
-			  </div>
-			  <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">	<span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span>
-				  <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
-				  <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span>
-				  <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span>
-				  <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span>
-				  <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 6"></span>
-			  </div>
-			  <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-			</div>
-
-			<div class="swiper-pagination"></div>
-			<div class="swiper-button-next"></div>
-			<div class="swiper-button-prev"></div>
-		</div>
-		
-		<!--about-->
-		<div class="content">
-			<img src="images/others/logo_1.png" width="100%" height="100%">
-		</div>
-		
-		<!--diary-->
-		<div class="content">
-			<img src="images/others/logo_2.png" width="100%" height="100%">
-		</div>
-		
-		<!--album-->
-		<div class="content">
-			<img src="images/others/logo_3.png" width="100%" height="100%">
-        </div>
-		
-		<!--video-->
-		<div class="content">
-			<img src="images/others/logo_4.png" width="100%" height="100%">
-        </div>
-		
-		<!--link-->
-		<div class="content">
-			<img src="images/others/logo_3.png" width="100%" height="100%">
-        </div>
-	</section>
+<body>
+	<div id="snow"></div>
 	
-	
-	<footer>
-		&copy; NOT FOR SALE. Just for Preservation.
-	</footer>
-	
-	<!-- Initialize Swiper -->
-	<script>
-	  var swiper = new Swiper(".mySwiper", {
-		slidesPerView: "auto",
-        spaceBetween: 30,
-		speed:1500,
-		loop:true,
-		autoplay: {
-		  delay: 3000,
-		  disableOnInteraction: false,
-		},
-		pagination: {
-		  el: ".swiper-pagination",
-		  dynamicBullets: true,
-		  clickable: true,
-		},
-		navigation: {
-		  nextEl: ".swiper-button-next",
-		  prevEl: ".swiper-button-prev",
-		},
-	  });
-	</script>
+	<main>
+		<div class="box box1"></div>
+		<div class="box box2">
+		   <h1>Snow Man</h1>
+			<p>
+				<br />
+				ああ、しょっぱいぜ！ナミダの海越えて<br />
+				無理難題な夢をまた見ような<br />
+				風に走れ　汗かいて　転げて その身を焦がせ<br />
+				失敗の数だけ増えようが<br />
+				間違いなんて誰が笑えようか？<br />
+				雨に打たれ　泥飲んで　踏まれて　花開け！<br />
+				『いつの日か』が　今日の日に<br />
+				目覚めない夢に　訪れるまで！
+				<br />
+			</p>
+		</div>
+		<div class="box box3">
+			<div class="nested"><span onclick="transitionToPage('home.html')">Enter</span></div>
+		</div>
+		<div class="box box4"></div>
+	</main>
 </body>
 </html>
+
