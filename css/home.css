@@ -186,17 +186,104 @@ body{
 }
 
 
+/*video*/
+article{
+	float:left;
+	width:100%;
+	box-sizing:border-box;
+	margin:50px 0px 0px;
+	background:rgba(255,255,255,.5);
+}
+
+/*2n : 雙數*/
+/*雙數則底色變色*/
+/*偽類 Pseudo Class*/
+article:nth-child(2n){
+	background: rgba(255, 190, 10, .1);
+}
+
+article .picbox, article .desbox{
+	float: left;
+	/*特殊容器內的設定要先做relative，否則會以瀏覽器為框架去移動*/
+	position: relative;
+	width: 50%;
+	box-sizing: border-box;
+}
+
+article .desbox{
+	/*圖片會撐滿容器，文字會卡在邊框 => 想要讓文字聚集一點*/
+	padding: 80px;
+	line-height: 2em;
+	/*justify : 讓文字較寬、文字左右切齊*/
+	text-align: justify;
+}
+
+.desbox h1{
+	/*font-family: 'Noto Serif TC', serif;*/
+	font-family: serif;
+	font-weight: 900;
+	font-size: 40px;
+	color: rgba(229, 94, 56, 1);
+	line-height: 2em;
+}
+
+/*報導的文字最後會有的小圖*/
+/*偽元素 Pseudo Element : 也可以加日期文字*/
+.desbox p::after{
+	content: url(../images/sq.jpg);	
+}
+
+.picbox img{
+	width: 100%;
+}
+
+.picbox:hover img{
+	-webkit-filter: brightness(30%); /*Safari*/
+	filter: brightness(30%);
+}
+
+.picbox:hover .fadebox{
+	opacity: 1;
+}
+
+.fadebox{
+	/*偵測容器中心點的位置*/
+	/*把中心從左上角移到正中間*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	
+	-ms-transform: translate(-50%, -50%); /*IE 9*/
+	-webkit-transform: translate(-50%, -50%); /*Safari*/
+	transform: translate(-50%, -50%);
+	opacity: 0;
+}
+
+.fadebox a{
+	display: block;
+	font-size: 25px;
+	padding: 16px 32px;
+	color: rgba(255, 255, 255, 1);
+	text-decoration: none;
+	background: rgba(229, 94, 56, 1);
+}
+
+.fadebox a:hover{
+	color: rgba(229, 94, 56, 1);
+	background: rgba(255, 255, 255, 1);
+}
+
+
 /*diary*/
 .diary{
-	width:80%;
 	height: auto;
 	margin: auto;
-	padding: 10px 0px 0px 0px;
-	color: #fff;
+	float: center;
+	text-align: center;
 }
 
 .diary img{
-	width:65%;
+	width:45%;
 	border-radius:5%;	
 }
 
