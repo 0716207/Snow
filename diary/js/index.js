@@ -3,12 +3,12 @@
 // switch pages : first level
 $(document).ready(function(){	
 	$(".teru_box").eq(0).addClass("teru_ch_bg");
-	$(".teru_content").eq(0).show();
+	$(".content").eq(0).show();
 
 	$(".teru_box").click(function(){
 		var _index = $(this).index();
 		$(this).addClass("teru_ch_bg").siblings().removeClass("teru_ch_bg");
-		$(".teru_content").eq(_index).fadeIn(1500).siblings().fadeOut(500);		
+		$(".content").eq(_index).fadeIn(1500).siblings().fadeOut(500);		
 	});	
 });
 
