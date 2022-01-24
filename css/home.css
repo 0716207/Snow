@@ -247,6 +247,42 @@ article .desbox{
 }
 
 
+/*video*/
+.video{
+	width: 80%;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.card{
+	float: left;
+	box-sizing: border-box;
+	width: 33.33%;
+	text-align: center;
+	border: solid 3px #fff;
+	padding: 5px 0px;
+	
+	font-size: 18px;
+	background: #5EA6BC;
+	color:#fff;
+	font-family: 'Cabin', meiryo, sans-serif;
+	
+	transition: background .5s, color .5s;
+	-webkit-transition: background .5s, color .5s;
+}
+
+.card:hover{
+	cursor: pointer;
+	background: rgba(207, 181, 59, 1);
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.card a{
+	text-decoration: none;
+	color: #fff;
+}
+
+
 /*link*/
 .wraptext{
 	text-align: center;

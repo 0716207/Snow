@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+  font-family: meiryo;
+  src: url(MeiryoWithMircosoftYahei.ttf);
+}
+
+::-moz-selection{ /*Firefox*/
+	color:#014170;
+	background: #fff;
+}
+
+::selection{
+	color:#014170;
+	background: #fff;
+}
+
+*{
+	margin:0;
+	padding:0;	
+	font-family: 'Cabin', meiryo, sans-serif;
+}
+
+
+.banner{
+	text-align: center;
+}
+
+
+/*aside*/ 
+aside{ 
+	position:fixed;
+	left:50px;
+	top:50px;
+	width:100px;
+	height:300px;
+	z-index:1000;
+	color: rgba(255,255,255,0);
+} 
+
+
+
+
+/*section*/ 
+section{ 
+	position:relative;
+	width:100vw;
+	/*height:120vh;
+	overflow:hidden;*/
+	padding-top: 50px;
+	padding-left: 400px;
+}
+
+.content{ 	
+	position:absolute;
+	width:100vw;
+	height:120vh;
+	left:500px;
+	top:10px;
+	bottom: 10px;
+	display:none;
+}
+
+span{
+	font-size: 20px;
+}
+
+/*footer*/
+footer{
+	padding:10px;
+	text-align:center;	
+}
+
+/*for tablets*/
+@media only screen and (min-width: 768px) {
+	.teru_box{
+		width: 15px;
+		height: 60px;
+		font-size:40px;
+		line-height:80px;
+		margin-bottom:15px;
+		text-align:center;
+		color:#014170;
+		background: #e9c46a;
+		box-sizing:border-box;
+		transition: 0.5s;
+	}
+	
+	.teru_box:hover{
+		background:#014170;
+		color:#B4B5BF;
+		cursor:pointer;
+	}
+
+	.teru_ch_bg{
+		background: #FFE800;
+	}
+
+}
+
+/*for desktops*/
+@media only screen and (min-width: 1200px) {
+
+}
+
