@@ -9,6 +9,7 @@
 	<!--css-->
 	<link href="css/index.css" rel="stylesheet" type="text/css">
 	<link href="css/rwd.css" rel="stylesheet" type="text/css">	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	
 	<!--js-->
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -18,10 +19,14 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap" rel="stylesheet">
+	
+	<!--font awesome-->
+	<script src="https://kit.fontawesome.com/bade478ead.js" crossorigin="anonymous"></script>
 </head>
 
 <header>
-	<div class="banner"><img src="images/logo_1.png"/></div>
+	<div class="web"><a href="https://www.johnnys-web.com/" target="_blank"><img src="images/brand-logo.svg"/></a></div>
+	<div id="top" class="banner animate__animated animate__pulse"><img src="images/logo_1.png"/></div>
 </header>
 	
 	
@@ -31,6 +36,22 @@
 		<div class="teru_box">220111</div>
 		<div class="teru_box">220103</div>
 		<div class="teru_box">211231</div>
+		
+		<div class="snowbar snowbar1">
+			<span onclick="transitionToPage('teru.html')"><img src="images/1.png" width="100%"/></span>
+			<span onclick="transitionToPage('fukka.html')"><img src="images/top_n_2.png" width="100%"/></span>
+			<span onclick="transitionToPage('raul.html')"><img src="images/top_n_3.png" width="100%"/></span>
+			<span onclick="transitionToPage('shoppi.html')"><img src="images/top_n_4.png" width="100%"/></span>
+		</div>
+		<div class="snowbar snowbar2">
+			<span onclick="transitionToPage('koji.html')"><img src="images/top_n_5.png" width="100%"/></span>
+			<span onclick="transitionToPage('abe.html')"><img src="images/top_n_6.png" width="100%"/></span>
+			<span onclick="transitionToPage('meme.html')"><img src="images/top_n_7.png" width="100%"/></span>
+			<span onclick="transitionToPage('date.html')"><img src="images/top_n_8.png" width="100%"/></span>
+			<span onclick="transitionToPage('sakuma.html')"><img src="images/top_n_9.png" width="100%"/></span>
+		</div>
+		
+		<div class="totop"><a href="#top"><i class="fas fa-angle-double-up"></i></a></div>
 	</aside>
 
 	<section>
@@ -444,7 +465,7 @@
 			</footer>
         </div>
 	</section>
-	
+
 	
 </body>
 </html>
