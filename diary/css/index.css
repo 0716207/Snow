@@ -61,6 +61,27 @@ body{
 }
 
 
+/*body*/
+.box{
+	width: 15px;
+	height: 60px;
+	font-size:40px;
+	line-height:80px;
+	margin-bottom:15px;
+	text-align:center;
+	color:#014170;
+	background: #e9c46a;
+	box-sizing:border-box;
+	transition: 0.5s;
+}
+
+.box:hover{
+	background:#014170;
+	color:#B4B5BF;
+	cursor:pointer;
+}
+
+
 /*aside*/ 
 aside{ 
 	position:relative;
@@ -96,18 +117,14 @@ aside{
 section{ 
 	clear: both;
 	width: 80%;
-	margin: auto;
-	
-	position:relative;
+	/*position:relative;*/
 	width:100vw;
 }
 
 .content{ 	
 	position:absolute;
-	
-	left:85px;
-	top:10px;
-	
+	margin-top: 400px;
+	left: 85px;
 	bottom: 10px;
 	display:none;
 }
@@ -146,19 +163,18 @@ span{
 	font-size: 44px;
 }
 
-.fa-angle-double-up:hover{
+.fa-angle-double-up{
 	transition: .3s;
-	color: #014170;
 }
 
 .fa-angle-double-up:hover{
-	color: rgba(207, 181, 59, 1);
+	opacity: .5;
 }
 
 
 /*footer*/
 footer{
-	padding:10px;
+	padding:20px;
 	text-align:center;	
 }
 
@@ -168,29 +184,79 @@ footer{
 		width: 50%;
 	}
 
-	.teru_box{
-		width: 15px;
-		height: 60px;
-		font-size:40px;
-		line-height:80px;
-		margin-bottom:15px;
-		text-align:center;
-		color:#014170;
-		background: #e9c46a;
-		box-sizing:border-box;
-		transition: 0.5s;
-	}
-	
-	.teru_box:hover{
-		background:#014170;
-		color:#B4B5BF;
-		cursor:pointer;
-	}
-
 	.teru_ch_bg{
 		background: #FFE800;
 	}
-	
+
+	.teru .fa-angle-double-up{
+		color: #FFE800;
+	}
+
+	.fukka_ch_bg{
+		background: #A770FF;
+	}
+
+	.fukka .fa-angle-double-up{
+		color: #A770FF;
+	}
+
+	.raul_ch_bg{
+		background: #fff;
+		border-color: #000;
+		border-style: solid;
+	}
+
+	.raul .fa-angle-double-up{
+		color: #000;
+	}
+
+	.shoppi_ch_bg{
+		background: #309AFF;
+	}
+
+	.shoppi .fa-angle-double-up{
+		color: #309AFF;
+	}
+
+	.koji_ch_bg{
+		background: #FFA300;
+	}
+
+	.koji .fa-angle-double-up{
+		color: #FFA300;
+	}
+	.abe_ch_bg{
+		background: #408D2C;
+	}
+
+	.abe .fa-angle-double-up{
+		color: #408D2C;
+	}
+
+	.meme_ch_bg{
+		background: #000;
+	}
+
+	.meme .fa-angle-double-up{
+		color: #000;
+	}
+
+	.date_ch_bg{
+		background: #D91414;
+	}
+
+	.date .fa-angle-double-up{
+		color: #D91414;
+	}
+
+	.sakuma_ch_bg{
+		background: #FF8ED4;
+	}
+
+	.sakuma .fa-angle-double-up{
+		color: #FF8ED4;
+	}
+
 	.content{ 	
 		left:500px;
 		top:10px;

@@ -183,9 +183,9 @@ body{
 /*profile*/
 article{
 	float:left;
-	width:100%;
+	width:70%;
 	box-sizing:border-box;
-	margin:50px 0px 0px;
+	margin:50px 225px 0px;
 	background:rgba(255,255,255,.5);
 }
 
@@ -219,7 +219,7 @@ article .desbox{
 	font-family: 'Cabin', meiryo, sans-serif;
 	color: #fff;
 	font-weight: 900;
-	font-size: 40px;
+	font-size: 35px;
 	line-height: 2em;
 }
 
@@ -319,6 +319,24 @@ article .desbox{
 
 .about img{
 	width:65%;
+}
+
+.totop{
+	clear: both;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	z-index: 100000;
+	font-size: 44px;
+}
+
+.fa-angle-double-up{
+	color: #fff;
+	transition: .3s;
+}
+
+.fa-angle-double-up:hover{
+	color:rgba(207, 181, 59, 1);
 }
 
 
