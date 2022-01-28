@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
     document.querySelector('body').style.opacity = 1
 })
 
-/*totop*/
+// totop
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
@@ -61,4 +61,3 @@ $(document).ready(function(){
     } // End if
   });
 });
-

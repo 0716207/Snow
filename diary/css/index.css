@@ -25,6 +25,7 @@ body{
 	/*fade to another page*/
 	opacity: 0;
    	transition: opacity 1s;
+	   background-color: #F2F0EB;
 }
 
 .web{
@@ -41,8 +42,7 @@ body{
 	width: 20%;
 	margin: auto;
 	float: left;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding: 10px 0px 0px 10px;
 	transition: .3s;
 }
 
@@ -61,7 +61,16 @@ body{
 }
 
 
-/*body*/
+/*aside*/ 
+aside{ 
+	position:relative;
+	top: 50px;
+	left:50px;
+	width:100px;
+	z-index:1000;
+	color: rgba(255,255,255,0);
+} 
+
 .box{
 	width: 15px;
 	height: 60px;
@@ -69,28 +78,17 @@ body{
 	line-height:80px;
 	margin-bottom:15px;
 	text-align:center;
-	color:#014170;
-	background: #e9c46a;
+	color:#737373;
+	background: #F2D0C4;;
 	box-sizing:border-box;
 	transition: 0.5s;
 }
 
 .box:hover{
-	background:#014170;
-	color:#B4B5BF;
+	background:#737373;
+	color:#F2D0C4;
 	cursor:pointer;
 }
-
-
-/*aside*/ 
-aside{ 
-	position:relative;
-	left:50px;
-	top:50px;
-	width:100px;
-	z-index:1000;
-	color: rgba(255,255,255,0);
-} 
 
 .snowbar{
 	position:fixed;
@@ -202,8 +200,6 @@ footer{
 
 	.raul_ch_bg{
 		background: #fff;
-		border-color: #000;
-		border-style: solid;
 	}
 
 	.raul .fa-angle-double-up{
