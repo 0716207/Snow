@@ -10,7 +10,12 @@
   src: url("ufonts.com_american-typewriter-condensed-light.ttf");
 }
 
-@import url("aos.css");/* CSS Document */
+[data-aos] {
+	visibility: hidden;
+}
+[data-aos].animated {
+	visibility: visible;
+}
 
 /**********************************/
 

@@ -1,6 +1,5 @@
 // JavaScript Document
 
-
 $(document).ready(function(){	
 	// switch pages
 	$(".box").eq(0).addClass("ch_bg");
@@ -20,7 +19,6 @@ $(document).ready(function(){
 			$('.totop').fadeOut();
 		}
 	});
-
 });
 
 
@@ -61,3 +59,4 @@ $(document).ready(function(){
     } // End if
   });
 });
+
