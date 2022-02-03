@@ -19,23 +19,8 @@ $(document).ready(function(){
 			$('.totop').fadeOut();
 		}
 	});
-});
 
-
-// fade to another page
-window.transitionToPage = function(href) {
-    document.querySelector('body').style.opacity = 0
-    setTimeout(function() { 
-        window.location.href = href
-    }, 500)
-}
-
-document.addEventListener('DOMContentLoaded', function(event) {
-    document.querySelector('body').style.opacity = 1
-})
-
-// totop
-$(document).ready(function(){
+  // totop
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 
@@ -59,4 +44,19 @@ $(document).ready(function(){
     } // End if
   });
 });
+
+
+// fade to another page
+window.transitionToPage = function(href) {
+    document.querySelector('body').style.opacity = 0
+    setTimeout(function() { 
+        window.location.href = href
+    }, 500)
+}
+
+document.addEventListener('DOMContentLoaded', function(event) {
+    document.querySelector('body').style.opacity = 1
+})
+
+
 
