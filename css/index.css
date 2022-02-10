@@ -71,7 +71,8 @@ main{
     justify-self: center; /*along the column*/
     align-self: center; /*along the row*/
     
-    padding:30px;
+    /*padding:30px;*/
+    padding:20%;
     background:#014170;
     color:rgba(255,255,255,1);
 }
@@ -86,21 +87,12 @@ main{
     background:none;
 }
 
-span{
-	transition: .3s;
-}
-
-span:hover{
-	cursor: pointer;
-	color: rgba(207, 181, 59, 1);
-}
-
 .nested{
     grid-column: 2/3;
     grid-row: 2/3;
     
-    border:solid 1px rgba(255,255,255,1);
-    padding:5px;
+    /*border:solid 1px rgba(255,255,255,1);*/
+    padding:20px;
     font-size:50px;
     color:rgba(255,255,255,1);
 }
@@ -131,18 +123,14 @@ main{
     grid-row-gap: 20px;
 	
 	/*column撐滿畫面*/
-	/*height: 100vh;*/
+	height: 100vh;
 }
 
 .box1{
 	grid-column: 2/5;
 	grid-row: 1/4;
-	
 	background:url(../images/front1.jpg) bottom no-repeat;
-	/*撐滿畫面*/
 	background-size:cover;
-	
-	/*用z-index做順序上的調整*/
 }
 
 .box2{
@@ -151,7 +139,7 @@ main{
 	justify-content: center; /*垂直置中*/
 	align-self: center; /*水平置中*/
 	
-	padding:30px;
+	padding:8%;
 	background:#014170;
 	color:rgba(255,255,255,1);
 }
@@ -167,14 +155,60 @@ main{
     background:none;
 }
 
+.button-55 {
+  align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1.2rem;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-55:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.button-55:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+span p{
+	transition: .3s;
+}
+
+span p:hover{
+	color: rgba(207, 181, 59, 1);
+}
+
 /*文字放box3正中間*/
 .nested{
     grid-column: 2/3;
     grid-row: 2/3;
-    
-	/*框線*/
-    border:solid 1px rgba(255,255,255,1);
-    padding:5px;
+    /*border:solid 1px rgba(255,255,255,1);*/
+    padding:8%;
     font-size:50px;
     color:rgba(255,255,255,1);
 }

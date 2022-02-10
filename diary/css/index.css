@@ -25,7 +25,7 @@ body{
 	/*fade to another page*/
 	opacity: 0;
    	transition: opacity 1s;
-	   background-color: #F2F0EB;
+	background-color: #F2F0EB;
 }
 
 .web{
@@ -92,10 +92,12 @@ aside{
 
 .snowbar{
 	position:fixed;
-	top: 100px;
+	top: 14%;
 	width:100px;
 	z-index:1000;
 	color: rgba(255,255,255,0);
+
+	
 }
 
 .snowbar img:hover{
@@ -103,11 +105,11 @@ aside{
 }
 
 .snowbar1{
-	left:1230px;
+	right: 13%;
 }
 
 .snowbar2{
-	left:1350px;
+	right: 5%;
 }
 
 
@@ -115,15 +117,19 @@ aside{
 section{ 
 	clear: both;
 	width: 80%;
-	/*position:relative;*/
 	width:100vw;
 }
 
-.content{ 	
-	position:absolute;
+.content{ 		
+	/*
 	margin-top: 400px;
 	left: 85px;
 	bottom: 10px;
+	*/
+	position:absolute;
+	margin-top: 25%;
+	left: 25%;
+	bottom: 5%;
 	display:none;
 }
 
@@ -141,7 +147,6 @@ span{
 
 .wraptext{
 	float: left;
-	
 	box-sizing: border-box;
 	padding: 30px;
 	width: 66.66%;
