@@ -61,7 +61,7 @@ main{
 .box1{
     grid-column: 1;
     grid-row: 2/5;
-	background:url(../images/front2.png) bottom no-repeat;
+	background:url(../images/front2.jpg) bottom no-repeat;
     background-size:cover;
 }
 

@@ -10,13 +10,6 @@
   src: url("ufonts.com_american-typewriter-condensed-light.ttf");
 }
 
-[data-aos] {
-	visibility: hidden;
-}
-[data-aos].animated {
-	visibility: visible;
-}
-
 /**********************************/
 
 *{
@@ -139,7 +132,6 @@ body{
   	transition: opacity .5s;
 }
 
-
 /*swiper*/
 :root{
     --swiper-pagination-color: #014170;
@@ -180,6 +172,27 @@ body{
 .swiper-slide img:hover{
 	cursor: pointer;
 }
+
+.vertical{
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+	color: #014170;
+	font-size: 16px;
+	padding: 15% 0px 0px 50px;
+}
+
+.mySwiper_home{
+	clear: both;
+	width: 75%;
+	float: right;
+	height: 100vh;
+}
+
+.mySwiper_home img:hover{
+	cursor:default;
+}
+
+
 
 
 /*profile*/
@@ -236,20 +249,16 @@ article .desbox{
 
 
 /*diary*/
-.diary{
-	text-align: center;
-}
-
 .diary img{
-	width:30%;
-	border-radius:5%;	
-	opacity: 1;
-	transition: .3s;
+	width: 200%;
+	border-radius: 45%;
+	top: 50%;
+	left: 30%;
 }
 
 .diary img:hover{
 	cursor: pointer;
-	opacity: .7;	
+	transform: translate3d(0, 3px, 0);
 }
 
 
@@ -350,7 +359,7 @@ article .desbox{
 /*footer*/
 footer{
 	clear:both;
-	padding:20px 0px;
+	padding:100px 0px;
 	text-align:center;
 	color:#014170;
 	font-size: 14px;
