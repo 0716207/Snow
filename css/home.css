@@ -36,6 +36,27 @@ h1{/*nav title*/
 	background: #014170;
 }
 
+#loading{
+	clear: both;
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100vw;
+	height: 100vh;
+	background-color: #fff;
+	opacity: 1;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.logo_img{
+	width: 20%;
+	margin-top: 22%;
+	margin-left: 38%;
+}
+
 
 /**********************************
 
@@ -100,7 +121,6 @@ nav .box:hover{
 	color: rgba(207, 181, 59, 1);
 	cursor: pointer;
 }
-
 
 
 /*section*/ 
@@ -173,11 +193,16 @@ body{
 	cursor: pointer;
 }
 
-.vertical{
+.vertical img{
+	padding-left:15%;
+}
+
+.vertical p{
 	writing-mode: vertical-rl;
 	text-orientation: upright;
 	color: #014170;
 	font-size: 16px;
+	padding: 0;
 	padding: 15% 0px 0px 50px;
 }
 

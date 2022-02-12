@@ -33,14 +33,13 @@
 </head>
 
 <header>
-	<div id="top" class="h_box">
+	<div id="top" class="h_box page">
         <!--logo-->
 		<span onclick="transitionToPage('home.html')"><img src="images/logo.png" height="100px"/></span>
             
         <!--nav-->
         <nav>
 			<ul>
-				<div class="box"></div>
 				<div class="box">PROFILE</div>
 				<div class="box">すの日常</div>
 				<div class="box">INTERVIEW</div>
@@ -54,11 +53,13 @@
         </nav>
 	</div>
 
-	<div class="totop"><a href="#top"><i class="fas fa-angle-double-up"></i></a></div>
+	<div class="totop page"><a href="#top"><i class="fas fa-angle-double-up page"></i></a></div>   
+	<div id="loading"><img class="logo_img animate__animated animate__fadeIn animate__zoomIn" src="images/logo_common_nav.svg"></div>
 </header>
 
 <body>	
 	<section>
+		<div class="page">
 		<!--防跳頁 main page-->
 		<div class="content">
 			<div class="row">
@@ -96,7 +97,11 @@
 						</div>
 					</div>
 				</div>
-				<div class="vertical">雪 Man in the Show</div>
+				<div class="vertical">
+					<p>雪 Man in the Show</p>
+					<img src="images/logo_common_nav_rotate.png">
+				</div>
+				
 			</div>
 		</div>
 		
@@ -545,10 +550,21 @@
 			</footer>
         </div>
 	</section>
-	
-	
+	</div>
+
 	<!--initialize swiper-->
 	<script>
+      // home page
+	  var swiper_home = new Swiper(".mySwiper_home", {
+        effect: "fade",
+        spaceBetween: 30,
+		loop:true,
+		autoplay: {
+		  delay: 4000,
+		},
+      });
+
+	  // profile
 	  var swiper = new Swiper(".mySwiper", {
 		slidesPerView: "auto",
         spaceBetween: 30,
@@ -565,14 +581,7 @@
 		},
 	  });
 
-	  var swiper_home = new Swiper(".mySwiper_home", {
-        effect: "fade",
-        spaceBetween: 30,
-		loop:true,
-		autoplay: {
-		  delay: 4000,
-		},
-      });
+	  
 	</script>
 </body>
 </html>
