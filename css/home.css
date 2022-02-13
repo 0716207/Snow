@@ -193,19 +193,6 @@ body{
 	cursor: pointer;
 }
 
-.vertical img{
-	padding-left:15%;
-}
-
-.vertical p{
-	writing-mode: vertical-rl;
-	text-orientation: upright;
-	color: #014170;
-	font-size: 16px;
-	padding: 0;
-	padding: 15% 0px 0px 50px;
-}
-
 .mySwiper_home{
 	clear: both;
 	width: 75%;
@@ -215,6 +202,19 @@ body{
 
 .mySwiper_home img:hover{
 	cursor:default;
+}
+
+.vertical p{
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+	color: #014170;
+	font-size: 16px;
+	padding: 15% 0px 0px 50px;
+}
+
+.vertical img{
+	clear: both;
+	padding-left:15%;
 }
 
 
