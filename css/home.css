@@ -204,17 +204,19 @@ body{
 	cursor:default;
 }
 
-.vertical p{
+.mainpage p{
 	writing-mode: vertical-rl;
 	text-orientation: upright;
 	color: #014170;
 	font-size: 16px;
-	padding: 15% 0px 0px 50px;
+
+	margin-top: -30%;
+	margin-left:3%;
 }
 
-.vertical img{
-	clear: both;
-	padding-left:15%;
+.mainpage img{
+	margin-top: 3%;
+	margin-left:18%;
 }
 
 
@@ -323,7 +325,6 @@ article .desbox{
 
 /*link*/
 .wraptext{
-	text-align: center;
 	color: #000;
 }
 
