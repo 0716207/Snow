@@ -198,6 +198,7 @@ body{
 	width: 75%;
 	float: right;
 	height: 100vh;
+	border-radius: 5%;
 }
 
 .mySwiper_home img:hover{
