@@ -108,7 +108,7 @@ nav .box{
 	
 	font-size:15px;
 	width:100px;
-	line-height:100px;
+	line-height:60px;
 	color: #014170;
 	text-decoration:none;
 	text-align:center;
@@ -116,10 +116,27 @@ nav .box{
 }
 
 nav .box:hover{
-	text-decoration-line: underline;
-    text-decoration-style: solid;
 	color: rgba(207, 181, 59, 1);
 	cursor: pointer;
+}
+
+/* underline animation */
+nav .box:after {    
+	background: none repeat scroll 0 0 transparent;
+	bottom: 0;
+	content: "";
+	display: block;
+	height: 1px;
+	left: 50%;
+	position: absolute;
+	background: rgba(207, 181, 59, 1);
+	transition: width 0.3s ease 0s, left 0.3s ease 0s;
+	width: 0;
+}
+
+nav .box:hover:after { 
+	width: 100%; 
+	left: 0; 
 }
 
 
