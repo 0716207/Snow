@@ -172,6 +172,7 @@ body{
 /*swiper*/
 :root{
     --swiper-pagination-color: #014170;
+	--swiper-navigation-color: #014170;
 }
 
 .swiper {
