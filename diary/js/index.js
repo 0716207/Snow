@@ -1,5 +1,4 @@
 // JavaScript Document
-
 $(document).ready(function(){	
 	// switch pages
   	//teru
@@ -132,5 +131,4 @@ $(document).ready(function(){
     } // End if
   });
 });
-
 
