@@ -102,26 +102,30 @@ nav ul{
 	list-style: none;
 }
 
-nav .box{
+nav li{
 	position:relative;
 	display: inline-block;
 	
-	font-size:15px;
 	width:100px;
 	line-height:60px;
-	color: #014170;
-	text-decoration:none;
 	text-align:center;
+}
+
+nav a{
+	font-size:15px;
+	text-decoration:none;
+	color: #014170;
+	
 	transition: .3s;
 }
 
-nav .box:hover{
+nav a:hover{
 	color: rgba(207, 181, 59, 1);
 	cursor: pointer;
 }
 
 /* underline animation */
-nav .box:after {    
+nav a:after {    
 	background: none repeat scroll 0 0 transparent;
 	bottom: 0;
 	content: "";
@@ -134,7 +138,7 @@ nav .box:after {
 	width: 0;
 }
 
-nav .box:hover:after { 
+nav a:hover:after { 
 	width: 100%; 
 	left: 0; 
 }
