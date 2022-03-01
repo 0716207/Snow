@@ -2,6 +2,7 @@
 
 $(document).ready(function(){	
 	// switch pages
+  /*
 	$(".box").eq(0).addClass("ch_bg");
 	$(".content").eq(0).show();
 
@@ -10,6 +11,7 @@ $(document).ready(function(){
 		$(this).addClass("ch_bg").siblings().removeClass("ch_bg");
 		$(".content").eq(_index).fadeIn(1500).siblings().fadeOut(500);		
 	});	
+  */
 	
 	//Check to see if the window is top if not then display button
 	$(window).scroll(function(){

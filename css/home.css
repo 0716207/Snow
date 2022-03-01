@@ -144,25 +144,6 @@ nav a:hover:after {
 }
 
 
-/*section*/ 
-section{ 
-	position:relative;
-	width:100vw;
-	/*height:120vh;*/
-	height: auto;
-	/*overflow:hidden;*/
-}
-
-.content{ 	
-	position:absolute;
-	width:100vw;
-	/*height:120vh;*/
-	left:0;
-	top:0;
-	display:none;
-}
-
-
 /*body*/
 body{
 	background: #fff;
