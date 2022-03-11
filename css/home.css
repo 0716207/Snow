@@ -255,7 +255,7 @@ article .picbox, article .desbox{
 	float: left;
 	/*特殊容器內的設定要先做relative，否則會以瀏覽器為框架去移動*/
 	position: relative;
-	width: 50%;
+	/*width: 50%;*/
 	box-sizing: border-box;
 }
 
