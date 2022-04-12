@@ -77,6 +77,7 @@ header{
 .h_box{
 	width: 80%;
 	margin: auto;
+	margin-top: 2%;
 }
 
 .h_box img{
@@ -88,14 +89,13 @@ header{
 
 .h_box img:hover{
 	cursor: pointer;
-	opacity: .7;
 }
-
 
 /*nav*/
 nav{
 	float: right;
 	z-index: 10000;
+	margin-top: 3%;
 }
 
 nav ul{
