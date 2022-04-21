@@ -90,8 +90,7 @@ header{
 	position: absolute;
 
 	bottom: 15px;
-	/*left: 25px;*/
-	padding-left: 10%;
+	left: 25px;
   }
   .menu:hover {
 	pointer-events: all;
@@ -379,7 +378,7 @@ article .desbox{
 }
 
 .interview_paragraph{
-	margin: 5% 25% 0% 25%;
+	margin: 5% 15% 0% 35%;
 }
 
 .ip_fukka span{
@@ -389,7 +388,7 @@ article .desbox{
 
 .interview_btn{
 	display: inline-flex;
-	margin: 10% 25% 0% 25%;
+	margin: 8% 0% 0% 35%;
 }
 
 .leftside, .rightside{
