@@ -88,8 +88,10 @@ header{
 	cursor: pointer;
 	pointer-events: none;
 	position: absolute;
+
 	bottom: 15px;
-	left: 25px;
+	/*left: 25px;*/
+	padding-left: 10%;
   }
   .menu:hover {
 	pointer-events: all;
@@ -358,7 +360,22 @@ article .desbox{
 
 /*interview*/
 .ip img{
-	margin: 3% 35% 3% 35%;
+	width: 70%;
+	margin: -8% 0% 3% 40%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+.ip_p{
+	position:relative; 
+	z-index:1000; 
+	font-size: 30px; 
+	font-family: HanaMinA, typewriter; 
+	color: #014170;
+
+	
+	margin-top: -45%;
+	margin-left: -50%;
+
 }
 
 .interview_paragraph{
@@ -373,6 +390,42 @@ article .desbox{
 .interview_btn{
 	display: inline-flex;
 	margin: 10% 25% 0% 25%;
+}
+
+.leftside, .rightside{
+	position: fixed;
+	z-index: 10000;
+}
+
+.leftside p, .rightside p{
+	font-size: 25px;
+	writing-mode: vertical-rl;
+}
+
+.leftside{
+	padding-top: 30vh;
+	margin-left: 2%;
+}
+
+.rightside{
+	float:right;	
+	/*margin-top: -80vh;*/
+	margin-left: 97%;
+	margin-top:-4%;
+}
+
+.leftside .ver_line{
+	height: 200px;
+	border-left: 1px solid #014170;
+	position: relative;
+	left: 45%;
+}
+
+.rightside .ver_line{
+	height: 200px;
+	border-right: 1px solid #014170;
+	position: relative;
+	right: 50%;
 }
 
 
