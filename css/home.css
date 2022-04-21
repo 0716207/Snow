@@ -26,6 +26,10 @@ h1{/*nav title*/
 	color: rgba(207, 181, 59, 1);
 }
 
+a{
+	text-decoration: none;
+}
+
 ::-moz-selection{ /*Firefox*/
 	color:#fff;
 	background: #014170;
@@ -294,6 +298,22 @@ article .desbox{
 	transform: translateY(0);
 	opacity: 1;
 }
+
+
+/*interview*/
+.ip img{
+	margin: 3% 35% 3% 35%;
+}
+
+.interview_paragraph{
+	margin: 5% 30% 0% 30%;
+}
+
+.ip_fukka span{
+	font-family: meiryo;
+	color: #A770FF;
+}
+
 
 /*diary*/
 .diary img{
