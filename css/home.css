@@ -257,7 +257,7 @@ body{
 	width: 75%;
 	float: right;
 	height: 100vh;
-	border-radius: 5%;
+	top: -80px;
 }
 
 .mySwiper_home img:hover{
@@ -269,13 +269,13 @@ body{
 	text-orientation: upright;
 	color: #014170;
 	font-size: 16px;
-
+	
 	margin-top: -30%;
 	margin-left:3%;
 }
 
 .mainpage img{
-	margin-top: 3%;
+	margin-top: -2.5%;
 	margin-left:18%;
 }
 
