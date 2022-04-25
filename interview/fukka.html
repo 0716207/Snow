@@ -11,7 +11,7 @@
 	<link href="../css/rwd.css" rel="stylesheet" type="text/css">	
 	<link href="../css/button.css" rel="stylesheet" type="text/css">	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-	
+
 	<!--js-->
 	<script type="text/javascript" src="../js/jquery-3.6.0.js"></script>
 	<script type="text/javascript" src="../js/index.js"></script>
@@ -30,6 +30,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap" rel="stylesheet">
 
 	<!--font awesome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://kit.fontawesome.com/bade478ead.js" crossorigin="anonymous"></script>
 </head>
 
@@ -226,16 +227,66 @@
 			「不過出道這件事靠我一個人是絕對實現不了的。對6人來說也辦不到。是因為相信9人而得以實現的...不對，是因為9人和許多的歌迷們相信著而得以實現這個夢想。所以我想向所有的歌迷說一句謝謝。接受9人的歌迷們，9人體制後才成為我們歌迷的人，這些當然不用說，還有至今也許還眷戀著6人時代的歌迷們也是。總有一天我們會讓你們重新回頭，覺得『9人的 Snow Man 也不錯』，這是我們努力的動力。所以要向所有的歌迷說句感謝，謝謝你們守護了Snow Man。今後我們9人也會繼續衝刺下去，請大家跟著來啦!」
 		</div>
 
+		<main class="main">
+			<div class="container">
+			  <div class="swiper-container">
+				<div class="swiper-wrapper">
+				  <div class="swiper-slide">
+					<div class="card-image">
+					  <img src="images/magazine/IMG_7416.JPG" alt="Image Slider">
+					</div>
+				  </div>
+				  <div class="swiper-slide">
+					<div class="card-image">
+					  <img src="images/magazine/IMG_7417.JPG" alt="Image Slider">
+					</div>
+				  </div>
+				  <div class="swiper-slide">
+					<div class="card-image">
+					  <img src="images/magazine/IMG_7418.JPG" alt="Image Slider">
+					</div>
+				  </div>
+				  <div class="swiper-slide">
+					<div class="card-image">
+					  <img src="images/magazine/IMG_7419.JPG" alt="Image Slider">
+					</div>
+				  </div>
+				  <div class="swiper-slide">
+					<div class="card-image">
+					  <img src="images/magazine/IMG_7420.JPG" alt="Image Slider">
+					</div>
+				  </div>
+				  <div class="swiper-slide">
+					<div class="card-image">
+					  <img src="images/magazine/IMG_7421.JPG" alt="Image Slider">
+					</div>
+				  </div>
+				</div>
+
+				 <!-- Add Pagination -->
+				 <div class="swiper-pagination"></div>
+				
+				<div class="swiper-button-next">
+					<!--fa-solid fa-circle-chevron-left-->
+					<i class="fa fa-spinner fa-spin" style="font-size:60px;color:red;margin-top: -117rem;margin-left: 120rem;"></i>
+				</div>
+				<div class="swiper-button-prev">
+					<i class="fa fa-spinner fa-spin" style="font-size:60px;color:yellow;margin-top: -120rem;margin-left: 23rem;"></i>
+				</div>
+			  </div>
+			</div>
+		</main>
+
 		<div class="row interview_btn">
 			<div class="buttons" style="float: left;">
-				<div class="container">
+				<div class="container_btn">
 					<a href="../interview.html" class="btn effect04" data-sm-link-text="MENU" target="_blank"><span>PREV</span></a>
 				</div>
 			</div>
 
 			<!--abe-->
-			<div class="buttons" style="float: right; margin-left: 55%;">
-				<div class="container">
+			<div class="buttons" style="float: right; margin-left: 50%;">
+				<div class="container_btn">
 					<a href="#" class="btn effect04" data-sm-link-text="あべちゃん" target="_blank"><span>NEXT</span></a>
 				</div>
 			</div>
@@ -247,50 +298,48 @@
 		</footer>
 	</div>
 
-	<!--initialize swiper-->
-	<script>
-      // home page
-	  var swiper_home = new Swiper(".mySwiper_home", {
-        effect: "fade",
-        spaceBetween: 30,
-		loop:true,
-		autoplay: {
-		  delay: 4000,
-		},
-      });
+	<style>
+		main .container {
+		  max-width: 75rem;
+		  width: 100%;
+		  padding: 10rem 2rem;
+		  margin: 0 auto;
+		}
+		
+		.card-image{
+			background: white;
+			border: none;
+			outline: none;
+			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+			border-radius: 2px;
+		}
 
-	  var swiper_home = new Swiper(".mySwiper_fluent", {
-        slidesPerView: "auto",
-		speed:3000,
-		loop:true,
-		autoplay: {
-		  delay: 0,
-		  waitForTransition:false,
-		  disableOnInteraction: false,
-		},
-      });
+		.card-image img{
+			display: block;
+			position: relative;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: auto;
+			object-fit: cover;
+		}
 
-	  // profile
-	  var swiper = new Swiper(".mySwiper", {
-		slidesPerView: "auto",
-        spaceBetween: 30,
-		speed:1500,
-		loop:true,
-		autoplay: {
-		  delay: 3000,
-		  disableOnInteraction: false,
-		},
-		pagination: {
-		  el: ".swiper-pagination",
-		  dynamicBullets: true,
-		  clickable: true,
-		},
-		navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-	  });
-	</script>
+		.swiper-pagination {
+			margin-bottom: 35%;
+        }
+
+		.swiper-button-next, .swiper-button-prev {
+			position: relative;
+			color: rgba(255, 255, 255, 0);
+			/*
+			background-image: none;
+			background-size: 0;
+			background-repeat: no-repeat;
+			
+			background-position: 0;
+			*/
+		}
+	</style>
 
 	<script>
 		function reveal() {
@@ -310,6 +359,33 @@
 		}
 		
 		window.addEventListener("scroll", reveal);
+	</script>
+
+	<script>
+		var swiper = new Swiper(".swiper-container", {
+			slidesPerView: 1.5,
+			spaceBetween: 10,
+			centeredSlides: true,
+			freeMode: true,
+			grabCursor: true,
+			loop: true,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true
+			},
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev"
+			},
+			breakpoints: {
+				500: {
+				slidesPerView: 1
+				},
+				700: {
+				slidesPerView: 1.5
+				}
+			}
+		});
 	</script>
 </body>
 </html>
