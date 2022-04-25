@@ -378,7 +378,7 @@ article .desbox{
 }
 
 .interview_paragraph{
-	margin: 5% 15% 0% 35%;
+	margin: 5% 25% 0% 25%;
 }
 
 .ip_fukka span{
@@ -388,7 +388,7 @@ article .desbox{
 
 .interview_btn{
 	display: inline-flex;
-	margin: 5% 0% 0% 26%;
+	margin: 3% 0% 0% 26%;
 }
 
 .leftside, .rightside{

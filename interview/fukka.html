@@ -16,6 +16,7 @@
 	<script type="text/javascript" src="../js/jquery-3.6.0.js"></script>
 	<script type="text/javascript" src="../js/index.js"></script>
 	<script type="text/javascript" src="../js/PureSnow.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	
 	<!---swiper-->
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
@@ -35,7 +36,7 @@
 </head>
 
 <header>
-	<div class="menu" style="padding-left:8%;">
+	<div class="menu">
 		<div class="label"><h3>top</h3></div>
 		<div class="spacer"></div>
 		<div class="item"><a href="../home.html"><span>top</span></a></div>
@@ -227,7 +228,28 @@
 			「不過出道這件事靠我一個人是絕對實現不了的。對6人來說也辦不到。是因為相信9人而得以實現的...不對，是因為9人和許多的歌迷們相信著而得以實現這個夢想。所以我想向所有的歌迷說一句謝謝。接受9人的歌迷們，9人體制後才成為我們歌迷的人，這些當然不用說，還有至今也許還眷戀著6人時代的歌迷們也是。總有一天我們會讓你們重新回頭，覺得『9人的 Snow Man 也不錯』，這是我們努力的動力。所以要向所有的歌迷說句感謝，謝謝你們守護了Snow Man。今後我們9人也會繼續衝刺下去，請大家跟著來啦!」
 		</div>
 
-		<main class="main">
+		<div class="row">
+			<div class="buttons" style="margin-top: 10%;">
+				<div class="container_btn">
+					<style>
+						.effect04_more {
+							outline: solid  2px #A770FF;
+						}
+
+						.effect04_more span{
+							color: #A770FF;
+						}
+
+						.effect04_more:hover{
+							background-color: #A770FF;
+						}
+					</style>
+					<div class="btn effect04 effect04_more" id="show-hidden" data-sm-link-text="CLICK" target="_blank"><span>MORE</span></div>
+				</div>
+			</div>
+		</div>
+
+		<main class="main hidden" style="display: none;">
 			<div class="container">
 			  <div class="swiper-container">
 				<div class="swiper-wrapper">
@@ -263,16 +285,12 @@
 				  </div>
 				</div>
 
-				 <!-- Add Pagination -->
-				 <div class="swiper-pagination"></div>
-				
-				<div class="swiper-button-next">
-					<!--fa-solid fa-circle-chevron-left-->
-					<i class="fa fa-spinner fa-spin" style="font-size:60px;color:red;margin-top: -117rem;margin-left: 120rem;"></i>
-				</div>
-				<div class="swiper-button-prev">
-					<i class="fa fa-spinner fa-spin" style="font-size:60px;color:yellow;margin-top: -120rem;margin-left: 23rem;"></i>
-				</div>
+				<div class="swiper-pagination"></div>
+
+				<div class="multi-button">
+					<button class="swiper-button-prev"></button>
+					<button class="swiper-button-next"></button>
+				  </div>
 			  </div>
 			</div>
 		</main>
@@ -324,20 +342,31 @@
 			object-fit: cover;
 		}
 
+		/*swiper*/
+		:root{
+			--swiper-pagination-color: #A770FF;
+			--swiper-navigation-color: #A770FF;
+		}
+
 		.swiper-pagination {
-			margin-bottom: 35%;
+			margin-bottom: 110%;
         }
+
+		.swiper-pagination --bullet {
+			opacity: 0.8;
+		}
+
+		.swiper-pagination --active {
+			background: white;
+		}		
 
 		.swiper-button-next, .swiper-button-prev {
 			position: relative;
-			color: rgba(255, 255, 255, 0);
-			/*
-			background-image: none;
-			background-size: 0;
-			background-repeat: no-repeat;
-			
-			background-position: 0;
-			*/
+		}
+
+		.multi-button{
+			margin-top: 5%;
+			margin-left: 20%;
 		}
 	</style>
 
@@ -359,9 +388,7 @@
 		}
 		
 		window.addEventListener("scroll", reveal);
-	</script>
 
-	<script>
 		var swiper = new Swiper(".swiper-container", {
 			slidesPerView: 1.5,
 			spaceBetween: 10,
@@ -387,5 +414,6 @@
 			}
 		});
 	</script>
+
 </body>
 </html>

@@ -78,3 +78,12 @@ onReady(function() {
   setVisible('.page', true);
   setVisible('#loading', false);
 });
+
+
+$(document).ready(function() {
+  $('#show-hidden').click(function() {
+    $('.hidden').slideToggle("slow");
+    // Alternative animation for example
+    // slideToggle("fast");
+  });
+});
