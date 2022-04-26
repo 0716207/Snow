@@ -386,6 +386,11 @@ article .desbox{
 	color: #A770FF;
 }
 
+.ip_abe span{
+	font-family: meiryo;
+	color: #408D2C;
+}
+
 .interview_btn{
 	display: inline-flex;
 	margin: 3% 0% 0% 26%;
