@@ -298,7 +298,6 @@ article{
 }
 
 article:nth-child(2n){
-	/*background: rgba(255, 190, 10, .1);*/
 	background: #014170;
 	color: #fff;
 }
@@ -313,22 +312,17 @@ article span{
 
 article .picbox, article .desbox{
 	float: left;
-	/*特殊容器內的設定要先做relative，否則會以瀏覽器為框架去移動*/
 	position: relative;
-	/*width: 50%;*/
 	box-sizing: border-box;
 }
 
 article .desbox{
-	/*圖片會撐滿容器，文字會卡在邊框 => 想要讓文字聚集一點*/
 	padding: 80px;
 	line-height: 2em;
-	/*justify : 讓文字較寬、文字左右切齊*/
 	text-align: justify;
 }
 
 .desbox h1{
-	/*font-family: 'Noto Serif TC', serif;*/
 	font-family: 'Cabin', meiryo, sans-serif;
 	color: #014170;
 	font-weight: 900;
@@ -385,7 +379,7 @@ article .desbox{
 	font-family: meiryo;
 	font-style: oblique;
 	font-weight: bold;
-	color: #915AE8;/*三元群*/
+	color: #915AE8;
 }
 
 .ip_abe span{
@@ -393,6 +387,13 @@ article .desbox{
 	font-style: oblique;
 	font-weight: bold;
 	color: #43A32A;
+}
+
+.ip_koji span{
+	font-family: meiryo;
+	font-style: oblique;
+	font-weight: bold;
+	color: #E87C0C;
 }
 
 .ip_hikaru span{
