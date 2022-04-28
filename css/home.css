@@ -403,6 +403,13 @@ article .desbox{
 	color: #D91414;
 }
 
+.ip_meme span{
+	font-family: meiryo;
+	font-style: oblique;
+	font-weight: bold;
+	color: black;
+}
+
 .ip_hikaru span{
 	font-family: meiryo;
 	font-style: oblique;
