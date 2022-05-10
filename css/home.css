@@ -410,6 +410,13 @@ article .desbox{
 	color: black;
 }
 
+.ip_sakuma span{
+	font-family: meiryo;
+	font-style: oblique;
+	font-weight: bold;
+	color: #FF8ED4;
+}
+
 .ip_hikaru span{
 	font-family: meiryo;
 	font-style: oblique;
