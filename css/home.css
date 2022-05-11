@@ -417,6 +417,13 @@ article .desbox{
 	color: #FF8ED4;
 }
 
+.ip_nabe span{
+	font-family: meiryo;
+	font-style: oblique;
+	font-weight: bold;
+	color: #309AFF;
+}
+
 .ip_hikaru span{
 	font-family: meiryo;
 	font-style: oblique;
