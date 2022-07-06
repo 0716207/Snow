@@ -424,6 +424,13 @@ article .desbox{
 	color: #309AFF;
 }
 
+.ip_raul span{
+	font-family: meiryo;
+	font-style: oblique;
+	font-weight: bold;
+	color: grey;
+}
+
 .ip_hikaru span{
 	font-family: meiryo;
 	font-style: oblique;
