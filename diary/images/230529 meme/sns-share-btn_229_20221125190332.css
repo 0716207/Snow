@@ -1,0 +1,27 @@
+.sns-share-btn .sns-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.sns-share-btn .sns-item {
+  width: 25px;
+  margin: 0 5px;
+}
+.sns-share-btn .sns-item.share {
+  width: 17px;
+}
+.sns-share-btn .sns-item button {
+  -webkit-appearance: none;
+  appearance: none;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-radius: 0;
+}
+.sns-share-btn .sns-item-button {
+  display: block;
+}
+.sns-share-btn .sns-item-button img {
+  width: 100%;
+}
